@@ -14,7 +14,7 @@ res_item = requests.get(url,headers={"user-agent":user_agent.random})
 
 #%%資料庫連線測試
 
-db = pymysql.connect(host = "localhost",port = 3306,user = "root",passwd = "123456",db = "591",charset = "utf8mb4")
+db = pymysql.connect(host = "localhost",port = 3306,user = "root",passwd = "*",db = "591",charset = "utf8mb4")
 cursor = db.cursor()
 cursor.execute("SELECT VERSION()")
 data = cursor.fetchone()
