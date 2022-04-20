@@ -65,7 +65,7 @@ class UI():
         self.c_button2.grid(row=0, column=3, padx=5, pady=5, sticky=tk.W)
 
     def cle(self):
-        """定义一个函数，用于清空输出框的内容"""
+        """定義一个函数，用于清空输出框的内容"""
         self.info.delete(1.0, "end")
 
     def startcrawler(self):
